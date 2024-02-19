@@ -1,2 +1,3 @@
--- creates a DATABASE called htbcn and script should not fail if database already EXISTS
+-- create database; shouldn't fail if non-existent
+
 CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
