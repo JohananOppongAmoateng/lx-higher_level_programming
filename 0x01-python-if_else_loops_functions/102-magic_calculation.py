@@ -1,8 +1,13 @@
 #!/usr/bin/python3
+
+# to see byte code, uncomment next two lines and running ./<filename>
+# import dis
+# print(dis.dis(magic_calculation))
+
 def magic_calculation(a, b, c):
-    """Match bytecode provided by holberton school"""
     if a < b:
-        return (c)
-    if c > b:
-        return (a + b)
-    return (a*b - c)
+        return c
+    elif c > b:
+        return a + b
+    else:
+        return (a * b) - c

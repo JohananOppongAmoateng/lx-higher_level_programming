@@ -1,4 +1,5 @@
-#!/usr/bin/python3`
+#!/usr/bin/python3
+
 def islower(c):
-    # Check if the ASCII value of c is within the range of lowercase letters
-    return ord('a') <= ord(c) <= ord('z')
+    # Check if the ASCII value of c is in the range of lowercase characters
+    return 97 <= ord(c) <= 122

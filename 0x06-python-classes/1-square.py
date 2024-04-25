@@ -1,14 +1,11 @@
 #!/usr/bin/python3
-""" Working on oop with python """
+
+"""
+Create a class named Square with a private instance attribute of: size.
+"""
 
 
-class Square():
-    """Class representing a square"""
-
+class Square:
+    """define class of square"""
     def __init__(self, size):
-        """ initialize the class
-
-        Args:
-           size (int): size of the square
-        """
         self.__size = size

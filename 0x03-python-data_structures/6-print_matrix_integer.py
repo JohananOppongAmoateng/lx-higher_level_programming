@@ -1,9 +1,16 @@
 #!/usr/bin/python3
+
 def print_matrix_integer(matrix=[[]]):
-    """Function that prints a matrix of integers"""
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            if j != 0:
-                print(" ", end='')
-            print("{:d}".format(matrix[i][j]), end='')
+    num_row = len(matrix)
+
+    for row in matrix:
+        num_elements = len(row)
+        col = 0  # This will keep track of the column index
+
+        for x in row:
+            if col < num_elements - 1:
+                print("{:d}".format(x), end=" ")
+            else:
+                print("{:d}".format(x), end="")
+            col += 1  # increment column index
         print()

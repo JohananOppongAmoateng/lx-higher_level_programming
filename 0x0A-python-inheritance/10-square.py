@@ -1,18 +1,24 @@
 #!/usr/bin/python3
 
-"""Defines a Rectangle subclass Square."""
+"""
+Square Moldule
+Create class Square that inherits from `9-Rectangle`.
+Instantiation with size: def __init__(self, size)::
+size must be private. No getter or setter
+size must be a positive integer, validated by integer_validator
+the area() method must be implemented
+"""
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
-    """Represent a square."""
+    """square class"""
 
     def __init__(self, size):
-        """Initialize a new square.
-
-        Args:
-            size (int): The size of the new square.
+        """initalizer
+        Args
+           size: size of side of square
         """
-        self.integer_validator("size", size)
-        super().__init__(size, size)
-        self.__size = size
+        super().integer_validator('size', size)
+        Rectangle.__init__(self, size, size)
